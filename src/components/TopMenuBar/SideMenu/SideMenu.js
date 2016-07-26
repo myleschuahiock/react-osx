@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Time from 'react-time';
 
 import styles from './SideMenu.css';
 

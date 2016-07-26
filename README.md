@@ -50,6 +50,7 @@ If you want to play around with this demo or even add your applications on it, p
 
 ## Issues and Functionality
 This isn't really intended to be a full-fledged alternative to Mac OSX, but clearly demonstrates the power of composability through React and CSS Modules. That being said, here are some issues I don't necessarily plan to complete but would help make this app work more like a Mac OSX.
+- [ ] Finish TopMenuBar SideBar with name and date
 - [ ] Wonky Z-index on click
 - [ ] Minimize functionality
 - [ ] appWindow resizability
