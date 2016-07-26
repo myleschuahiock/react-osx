@@ -24,6 +24,7 @@ Clone this repo or download the ZIP
 
 ## How do I "install" my own React apps on MockOSX? ##
 "Installing React apps" are relatively easy on Mock OSX but are kind of tedious.
+
 1. Simply take your existing React app and strip it down to its components
   - If you have specific npm modules, just do an npm install on those packages and you're good to go!
 2. Create a JS file to hold your React components and a CSS file to hold your styles.
