@@ -25,24 +25,24 @@ Clone this repo or download the ZIP
 ## How do I "install" my own React apps on MockOSX? ##
 "Installing React apps" are relatively easy on Mock OSX but are kind of tedious.
 1. Simply take your existing React app and strip it down to its components
-   - If you have specific npm modules, just do an npm install on those packages and you're good to go!
+  - If you have specific npm modules, just do an npm install on those packages and you're good to go!
 2. Create a JS file to hold your React components and a CSS file to hold your styles.
-   - Copy paste your styles and convert them into camelCase.
-   - Make sure to import your CSS styles through ``` import styles from './MyApp.CSS' ```
-   - Change all your ``` className="class" ``` to ```className={styles.class}``` in your React component
-   - Some third-party components use global classNames to perform certain computations on React nodes. If this is the case, use the classnames npm module installed. (See an example of this on appWindow.js as the draggable component requires an unhashed className to use it's handle property) 
+  - Copy paste your styles and convert them into camelCase.
+  - Make sure to import your CSS styles through ``` import styles from './MyApp.CSS' ```
+  - Change all your ``` className="class" ``` to ```className={styles.class}``` in your React component
+  - Some third-party components use global classNames to perform certain computations on React nodes. If this is the case, use the classnames npm module installed. (See an example of this on appWindow.js as the draggable component requires an unhashed className to use it's handle property) 
 3. Add export default to your app, and import it in ```AppRender.js```
-   - Create a switch(case) statement that returns ```<AppWindow><YourApp></AppWindow>```
-   - Provide a custom ```height``` and ```width``` to your application
+  - Create a switch(case) statement that returns ```<AppWindow><YourApp></AppWindow>```
+  - Provide a custom ```height``` and ```width``` to your application
 4. Add a new entry into the DesktopAppConfig (this is the file being read to render the changing top menu bar)
-   - name - Provide a simple application name, this is the string React will look up to open and close apps. No spaces please.
-   - icon_src - Provide a square icon for your app.
-   - menu.menuName - This is the name displayed on the top menu bar
-   - menu.menuProperties - These are what populate the dropdown properties bar (each separate array is property section with 1px border dividers)
+  - name - Provide a simple application name, this is the string React will look up to open and close apps. No spaces please.
+  - icon_src - Provide a square icon for your app.
+  - menu.menuName - This is the name displayed on the top menu bar
+  - menu.menuProperties - These are what populate the dropdown properties bar (each separate array is property section with 1px border dividers)
 5. That's it! 
-   - The Mock OSX app takes your app name from DesktopAppConfig as a reference in opening and closing your app through a ```switch(case)```
-   - All properties flow down React style to the BottomBar, TopMenuBar and other Components.
-   - If you have any problems, refer to your dev tools or look at the existing applications as implementation examples.
+  - The Mock OSX app takes your app name from DesktopAppConfig as a reference in opening and closing your app through a ```switch(case)```
+  - All properties flow down React style to the BottomBar, TopMenuBar and other Components.
+  - If you have any problems, refer to your dev tools or look at the existing applications as implementation examples.
 
 
 If you want to play around with this demo or even add your applications on it, please feel free to clone and make a pull request.
