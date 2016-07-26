@@ -22,6 +22,8 @@ Clone this repo or download the ZIP
   > npm start
 ```
 
+Go to localhost:8080 on your browser
+
 ## How do I "install" my own React apps on MockOSX? ##
 "Installing React apps" are relatively easy on Mock OSX but are kind of tedious.
 
